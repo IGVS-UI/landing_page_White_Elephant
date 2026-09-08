@@ -1,0 +1,266 @@
+/* Layout adjustments for narrow mobile screens. */
+@media (max-width: 720px) {
+	.theme-toggle {
+		top: 12px;
+		left: 12px;
+		min-height: 36px;
+		padding: 7px 10px;
+	}
+
+	body {
+		padding-bottom: 72px;
+	}
+
+	.container {
+		top: 0;
+		width: min(100%, 420px);
+		padding: 0 clamp(16px, 5vw, 24px) 80px;
+	}
+
+	.header {
+		padding-top: clamp(28px, 8vw, 48px);
+		padding-bottom: clamp(48px, 12vw, 90px);
+	}
+
+	.logo-wrap {
+		width: clamp(112px, 30vw, 150px);
+		height: clamp(112px, 30vw, 150px);
+		margin-bottom: 16px;
+	}
+
+	.logo-wrap img {
+    width:120px;
+    height: 80px;
+		
+	}
+
+	.brand-name {
+		font-size: clamp(30px, 8vw, 36px);
+	}
+
+	.brand-tagline {
+		font-size: 15px;
+	}
+
+	.links-section {
+		gap: clamp(14px, 4vw, 25px);
+		margin-bottom: 30px;
+	}
+
+	.link-btn {
+		gap: clamp(14px, 4vw, 30px);
+		min-height: 78px;
+		padding: 14px clamp(14px, 4vw, 20px);
+	}
+
+	.link-icon {
+		width: 44px;
+		height: 44px;
+	}
+
+	.link-icon img {
+		width: 44px;
+		height: 36px;
+	}
+
+  .link-icon-site img {
+    width: 44px;
+    height: 44px;
+  }
+
+	.link-label {
+		font-size: clamp(20px, 6vw, 25px);
+	}
+
+	.link-desc {
+		font-size: clamp(11px, 3vw, 12px);
+	}
+
+	.support-link a {
+		font-size: 14px;
+	}
+
+	footer,
+	.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+		padding: 16px 12px;
+	}
+
+	footer p,
+	.footer p {
+		font-size: clamp(8px, 2.4vw, 10px);
+		line-height: 1.4;
+	}
+}
+
+@media (min-width: 721px) and (max-width: 1080px) {
+	.container {
+		top: 0;
+	}
+}
+
+@media (min-width: 1081px) {
+	.container {
+		top: 0;
+	}
+}
+/*
+  Layout mobile-first. Os valores fluidos cobrem telas 9:20 como
+  720x1600, 1080x2400 e 1440x3200, independente da densidade de pixels.
+*/
+@media screen and (max-width: 720px) {
+  html {
+    min-width: 320px;
+  }
+
+  body {
+    min-height: 100svh;
+    padding-bottom: 72px;
+  }
+
+  .theme-toggle {
+    top: 12px;
+    left: 12px;
+    min-height: 36px;
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+
+  .container {
+    top: 0;
+    width: 100%;
+    max-width: 680px;
+    padding: 0 clamp(20px, 5.55vw, 40px) 112px;
+  }
+
+  .header {
+    padding-top: clamp(36px, 7vw, 52px);
+    padding-bottom: clamp(54px, 11vw, 90px);
+  }
+
+  .logo-wrap {
+    width: clamp(112px, 21vw, 150px);
+    height: clamp(112px, 21vw, 150px);
+    margin-bottom: clamp(14px, 2.8vw, 20px);
+  }
+
+  .logo-wrap img {
+    width: 120px;
+    height: clamp(64px, 12vw, 86px);
+  }
+
+  .brand-name {
+    font-size: clamp(30px, 5vw, 42px);
+    letter-spacing: clamp(2px, 0.42vw, 3px);
+  }
+
+  .brand-tagline {
+    margin-top: 6px;
+    font-size: clamp(11px, 1.8vw, 14px);
+  }
+
+  .links-section {
+    gap: clamp(16px, 3.45vw, 25px);
+    margin-bottom: 28px;
+  }
+
+  .link-btn {
+    min-height: clamp(76px, 13.9vw, 100px);
+    gap: clamp(14px, 3.45vw, 30px);
+    padding: clamp(14px, 2.25vw, 18px) clamp(16px, 3.1vw, 24px);
+    border-radius: clamp(12px, 1.95vw, 16px);
+  }
+
+  .link-icon {
+    width: clamp(40px, 6.95vw, 50px);
+    height: clamp(40px, 6.95vw, 50px);
+  }
+
+  .link-icon img {
+    width: 100%;
+    height: 80%;
+  }
+
+  .link-icon-site img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .link-label {
+    font-size: clamp(18px, 3.5vw, 25px);
+    line-height: 1.1;
+  }
+
+  .link-desc {
+    margin-top: 3px;
+    font-size: clamp(11px, 1.7vw, 13px);
+  }
+
+  .link-arrow {
+    font-size: clamp(16px, 2.35vw, 20px);
+  }
+
+  .support-link {
+    margin-top: -10px;
+    margin-bottom: 16px;
+  }
+
+  .support-link a {
+    font-size: clamp(13px, 2.1vw, 15px);
+  }
+
+  .model-showcase {
+    height: clamp(210px, 48vw, 300px);
+    margin-top: 6px;
+    margin-bottom: 24px;
+    border-radius: clamp(14px, 2.5vw, 18px);
+  }
+
+  footer,
+  .footer {
+    padding: 16px clamp(16px, 4vw, 28px);
+  }
+
+  footer p,
+  .footer p {
+    font-size: clamp(9px, 1.45vw, 11px);
+    letter-spacing: clamp(0.8px, 0.22vw, 1.5px);
+  }
+}
+
+/* Evita aperto em aparelhos compactos de 320 a 390 px de largura. */
+@media screen and (max-width: 390px) {
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .header {
+    padding-bottom: 48px;
+  }
+
+  .link-btn {
+    gap: 14px;
+  }
+
+  .link-label {
+    font-size: 18px;
+  }
+}
+
+/* Preserva o conteúdo quando o navegador está em uma janela baixa. */
+@media screen and (max-height: 700px) and (max-width: 720px) {
+  .header {
+    padding-top: 28px;
+    padding-bottom: 36px;
+  }
+
+  .logo-wrap {
+    width: 120px;
+    height: 104px;
+  }
+}

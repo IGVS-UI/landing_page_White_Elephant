@@ -5,10 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>White Elephant · A loja de tênis mais barata do Brasil</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsividade.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=BBH+Bartle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="bg-pattern"></div>
+
 <div class="container">
 
   <div class="header">
@@ -20,12 +25,12 @@
   </div>
 
   <div class="links-section">
-    <div class="shoe-background" aria-hidden="true">
+       <div class="shoe-background" aria-hidden="true">
       <img src="img/air_force.png" alt="">
     </div>
     <a href="https://www.whiteelephant.com.br/" class="link-btn">
-      <div class="link-icon">
-        <img src="img/local-na-rede-internet.png" alt="Loja online">
+      <div class="link-icon link-icon-site">
+        <img src="img/logo2.jpg" alt="Loja online">
       </div>
       <div class="link-text">
         <span class="link-label">Compre pelo site</span>
@@ -40,12 +45,11 @@
         <img src="img/whatsapp.png" alt="WhatsApp">
       </div>
       <div class="link-text">
-        <span class="link-label">Comprar agora</span>
+        <span class="link-label">Comprar no whatssap</span>
         <span class="link-desc">Peça pelo WhatsApp</span>
       </div>
       <span class="link-arrow">›</span>
     </a>
-
 
     <a href="https://api.whatsapp.com/send/?phone=5511932689144&text=Ol%C3%A1%2C+gostaria+de+suporte%21&type=phone_number&app_absent=0" class="link-btn">
       <div class="link-icon">
@@ -53,15 +57,41 @@
       </div>
       <div class="link-text">
         <span class="link-label">SAC</span>
-        <span class="link-desc">Dúvidas e trocas</span>
+        <span class="link-desc">Suporte para Pedidos</span>
+      </div>
+      <span class="link-arrow">›</span>
+    </a>
+
+     <a href="https://www.google.com/search?q=white+elephant&rlz=1C1HKFL_pt-PTBR1199BR1199&oq=white+elephant&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7Mg8IARAuGCcYrwEYxwEYjgUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGD3SAQg1NjE4ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x94ce5d49c0cbb405:0x5bc62c4c7917b02b,1,,,," class="link-btn">
+      <div class="link-icon link-icon-google">
+        <img src="img/pesquisa.png" alt="Pesquisa">
+      </div>
+      <div class="link-text">
+        <span class="link-label">Avaliações no Google</span>
+        <span class="link-desc">Veja o que os clientes dizem</span>
       </div>
       <span class="link-arrow">›</span>
     </a>
   </div>
   <p class="support-link"><a href="https://api.whatsapp.com/send/?phone=5511932689144&text=Ol%C3%A1%2C+gostaria+de+suporte%21&type=phone_number&app_absent=0">Ajuda e Suporte</a></p>
+  <section class="model-showcase" aria-label="Modelo 3D do Nike Air Force 1">
+    <model-viewer
+      src="models/nike_air_force_1_black.glb"
+      alt="Tênis Nike Air Force 1 preto em modelo 3D"
+      camera-controls
+      auto-rotate
+      rotation-per-second="18deg"
+      interaction-prompt="none"
+      shadow-intensity="1"
+      exposure="1.1"
+      camera-orbit="0deg 72deg auto">
+    </model-viewer>
+  </section>
 </div>
 <footer>
   <p>© 2026 WHITE ELEPHANT · TODOS OS DIREITOS RESERVADOS</p>
 </footer>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<script src="js/theme.js"></script>
 </body>
 </html>

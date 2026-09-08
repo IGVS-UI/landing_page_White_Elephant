@@ -11,8 +11,11 @@
     position: relative;
     padding-bottom: 61px;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
+ 
   .bg-pattern {
+    
     position: fixed;
     inset: 0;
     background: radial-gradient(ellipse at 50% 0%, #ffe7b7 0%, #ffffff     60%);
@@ -50,42 +53,34 @@
     overflow: hidden;
   }
   .logo-wrap img {
-    width: 80px;
+    width: 150px;
     height: 80px;
     object-fit: contain;
   }
   .brand-name {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Anton', sans-serif; font-size: 36px;
     font-size: 36px;
     letter-spacing: 3px;
     color: #c9a227;
     line-height: 1;
   }
-  .brand-name span { color: #c9a227; }
+  .brand-name span { color: #c9a227;
+   }
   .brand-tagline {
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 500;
     letter-spacing: normal;
     color: #777;
     margin-top: 6px;
   }
-
-  .links-section {
-    position: relative;
-    isolation: isolate;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-bottom: 36px;
-  }
-  .shoe-background {
+    .shoe-background {
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 40%;
     z-index: 0;
-    width: 700px;
+    width:600px;
     pointer-events: none;
-    transform: translate(-50%, -50%) rotate(-12deg);
+    transform: translate(-50%, -50%) rotate(-20deg);
   }
   .shoe-background img {
     display: block;
@@ -99,14 +94,26 @@
     position: relative;
     z-index: 1;
   }
+
+  .links-section {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 36px;
+  }
   .link-btn {
     display: flex;
     align-items: center;
     gap: 30px;
     width: 100%;
     padding: 16px 20px;
-    background: #141414;
-    border: 0.5px solid #2a2a2a;
+    background: #070707;
+    
+    box-shadow:  #c9a227;
     border-radius: 14px;
     color: #fff;
     text-decoration: none;
@@ -128,7 +135,7 @@
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: #c9a227;
+    background: #f39b19;
     transform: scaleX(0);
     transform-origin: left center;
     transition: transform 0.3s ease;
@@ -151,7 +158,9 @@
   .link-btn.primary { background: #c9a227; border-color: #c9a227; color: #0a0a0a; }
   .link-btn.primary:hover { background: #e0b830; }
   .link-btn.primary .link-label { color: #0a0a0a; }
-  .link-btn.primary .link-desc { color: rgba(0,0,0,0.55); }
+  .link-btn.primary .link-desc { color: rgba(0,0,0,0.55);
+  
+   }
   .link-icon {
     width: 50px;
     height: 50px;
@@ -161,12 +170,24 @@
     justify-content: center;
     flex-shrink: 0;
   }
-  .link-btn.primary .link-icon { background: rgba(0,0,0,0.15); }
+  .link-btn.primary .link-icon { background: rgba(0,0,0,0.15);  }
   .link-icon svg { width: 18px; height: 18px; }
   .link-icon img { width: 50px; height: 40px; object-fit: contain; }
+  .link-icon-site img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .link-icon-google {
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+  }
   .link-text { display: flex; flex-direction: column; }
-  .link-label { font-size: 25px; font-weight: 700; color: #fff; letter-spacing: 0.2px; }
-  .link-desc { font-size: 12px; color: #666; margin-top: 1px; }
+  .link-label { font-size: 21px; font-weight: 700; color: #fff; letter-spacing: 0.2px; }
+  .link-desc { font-size: 13px; color: #666; margin-top: 1px;
+  font-weight: 500;  }
   .link-arrow { margin-left: auto; color: #555; font-size: 16px; }
   .link-btn.primary .link-arrow { color: rgba(0,0,0,0.4); }
   .support-link {
@@ -181,6 +202,23 @@
     text-decoration: none;
   }
   .support-link a:hover { color: #999; }
+
+  .model-showcase {
+    width: 100%;
+    height: 260px;
+    margin: 4px 0 28px;
+    border: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: transparent;
+  }
+  .model-showcase model-viewer {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    --poster-color: transparent;
+  }
 
   .about-card {
     width: 100%;
@@ -272,3 +310,4 @@
     color: #666;
     letter-spacing: 1.5px;
   }
+
