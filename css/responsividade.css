@@ -23,7 +23,7 @@
 	}
 
 	.logo-wrap {
-		width: clamp(112px, 30vw, 150px);
+    width: 120px;
 		height: clamp(112px, 30vw, 150px);
 		margin-bottom: 16px;
 	}
@@ -117,6 +117,12 @@
     min-width: 320px;
   }
 
+  html,
+  body {
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+  }
+
   body {
     min-height: 100svh;
     padding-bottom: 72px;
@@ -143,7 +149,7 @@
   }
 
   .logo-wrap {
-    width: clamp(112px, 21vw, 150px);
+    width: 120px;
     height: clamp(112px, 21vw, 150px);
     margin-bottom: clamp(14px, 2.8vw, 20px);
   }
@@ -260,7 +266,7 @@
   }
 
   .logo-wrap {
-    width: 120px;
-    height: 104px;
+    width: 150px;
+    height: auto;
   }
 }

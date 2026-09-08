@@ -44,7 +44,7 @@
     height: 150px;
     border-radius: 50%;
     background: #ffffff;
-    border: 2px solid #c9a227;
+    border: 2px solid #fac20a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@
     color: #c9a227;
     line-height: 1;
   }
-  .brand-name span { color: #c9a227;
+  .brand-name span { color: #f39b19;
    }
   .brand-tagline {
     font-size: 15px;
@@ -111,9 +111,8 @@
     gap: 30px;
     width: 100%;
     padding: 16px 20px;
-    background: #070707;
-    
-    box-shadow:  #c9a227;
+    background: linear-gradient(135deg, #070707 0%, #17130a 100%);
+    border: 1px solid rgba(201, 162, 39, 0.55);
     border-radius: 14px;
     color: #fff;
     text-decoration: none;
@@ -121,7 +120,10 @@
     font-weight: 500;
     letter-spacing: 0.3px;
     cursor: pointer;
-    transition: 0.5s;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18),
+      0 0 0 1px rgba(201, 162, 39, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+      border-color 0.3s ease;
   }
   .btn,
   .link-btn {
@@ -135,7 +137,7 @@
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: #f39b19;
+    background: linear-gradient(135deg, #c9a227 0%, #f39b19 100%);
     transform: scaleX(0);
     transform-origin: left center;
     transition: transform 0.3s ease;
@@ -150,11 +152,20 @@
     z-index: 1;
   }
   .link-btn:hover { 
-    transition:  transform 0.5s;
-    transform:translateY(-5px);
-    border-color: #c9a227;
-    border-width: 1px;
-}
+    transform: translateY(-4px);
+    border-color: #f39b19;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24),
+      0 0 18px rgba(201, 162, 39, 0.22);
+  }
+  .link-btn:hover .link-label,
+  .link-btn:hover .link-desc,
+  .link-btn:hover .link-arrow {
+    color: #0a0a0a;
+  }
+  .link-btn:focus-visible {
+    outline: 2px solid #f39b19;
+    outline-offset: 4px;
+  }
   .link-btn.primary { background: #c9a227; border-color: #c9a227; color: #0a0a0a; }
   .link-btn.primary:hover { background: #e0b830; }
   .link-btn.primary .link-label { color: #0a0a0a; }
