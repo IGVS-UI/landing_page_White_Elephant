@@ -195,6 +195,11 @@
     border-radius: 50%;
     overflow: hidden;
   }
+  .link-icon-estrela {
+    
+    border-radius: 50%;
+    overflow: hidden;
+  }
   .link-text { display: flex; flex-direction: column; }
   .link-label { font-size: 21px; font-weight: 700; color: #fff; letter-spacing: 0.2px; }
   .link-desc { font-size: 13px; color: #666; margin-top: 1px;

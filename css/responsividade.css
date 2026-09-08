@@ -155,8 +155,8 @@
   }
 
   .logo-wrap img {
-    width: 120px;
-    height: clamp(64px, 12vw, 86px);
+    width: 100px;
+    height: 120px;
   }
 
   .brand-name {
@@ -267,6 +267,6 @@
 
   .logo-wrap {
     width: 150px;
-    height: auto;
+    height: 120px;
   }
 }
